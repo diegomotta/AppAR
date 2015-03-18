@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppAR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnReproducir">Play video</string>
+    <string name="btnEscanear">Escanear</string>
+    <string name="txt2activity">URL</string>
+    <string name="AboutBusiness">Sobre la Empresa</string>
+    <string name="Help">Ayuda</string>
+    <string name="Close">Salir</string>
+    <string name="BtnDescripcion">Descripción</string>
+    <string name="lblFragment1">Descripcio</string>
+    <string name="txtFrag1"> </string>
+    <string name="txtDescripcionGeneral"> </string>
+</resources>
