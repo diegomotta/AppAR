@@ -62,8 +62,12 @@
 	            android:name="android.support.PARENT_ACTIVITY"
 	            android:value="MainActivty" />
         </activity>
-        <service android:name=".ServicioLectura"></service>
+        
+        <service android:name=".ServicioLecturaQR"></service>
+        <service android:name=".ServicioDecodificarImagen" />
         <activity android:name="entradasproducto.InformacionBasica"></activity>
+        <activity android:name="entradasproducto.Imagen"></activity>
+        <activity android:name="PantallaCompletaImage"></activity>
 
         
 

@@ -13,4 +13,7 @@
     <string name="lblFragment1">Descripcio</string>
     <string name="txtFrag1"> </string>
     <string name="txtDescripcionGeneral"> </string>
+    <string name="tituloImagenGeneral"> </string>
+    <string name="descripcionImagenGeneral"> </string>
+    <string name="contenidoImagen"> </string>
 </resources>

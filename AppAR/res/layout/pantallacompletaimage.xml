@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+   	<FrameLayout 
+   	 android:layout_width="fill_parent"
+   	 android:layout_height="fill_parent" > 
+		   	 <ImageSwitcher
+		   	     android:id="@+id/imagenSwithcer"
+		   	     android:layout_width="fill_parent"
+		   	     android:layout_height="fill_parent"
+		   	     android:layout_gravity="center"
+		   	     android:keepScreenOn="true"
+		   	     android:onClick="imageClick" >
+		   	 </ImageSwitcher>
+		   	 
+		   	<LinearLayout
+		   	    android:id="@+id/textoImagen"
+		   	    android:layout_width="fill_parent"
+		   	    android:layout_height="58dp"
+		   	    android:layout_gravity="center_horizontal|bottom"
+		   	    android:background="@drawable/gris"
+		   	    android:orientation="vertical"
+		   	    android:padding="12dip" >
+
+		   	    <TextView 
+		   	        android:layout_width="fill_parent"
+		   	        android:layout_height="wrap_content"
+		   	        android:id="@+id/tituloImagen"
+		   	        android:textSize="12sp"/>
+		   	    <TextView 
+		   	        android:layout_width="fill_parent"
+		   	        android:layout_height="wrap_content"
+		   	        android:id="@+id/descripcionImagen"
+		   	        android:textSize="12sp"/>
+		   	</LinearLayout>
+   	</FrameLayout>
+</FrameLayout>

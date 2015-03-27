@@ -1,6 +1,8 @@
 package com.appar;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -44,12 +46,10 @@ public class Elemento extends ActionBarActivity implements OnItemClickListener{
 		/**INDICAR TITULO Y SUBTITULO**/
 		actionBar.setTitle("Información del producto");
 		actionBar.setSubtitle("Menu Principal");
-		
 		preference = new SharedPreference(getApplicationContext());
 		objetoProductoPublic = (RespuestaHTTP) getIntent().getExtras().getSerializable("sampleObject");
 		String json_response = new Gson().toJson(objetoProductoPublic);
 		preference.guardarObjeto(json_response);
-		
 		crearEntradas();  
 	    EntradasAdapter adapter = new EntradasAdapter(this, items);
 	    ListView lv = (ListView)findViewById(R.id.list);
@@ -76,21 +76,23 @@ public class Elemento extends ActionBarActivity implements OnItemClickListener{
 	}
 	
 	
-/** INTERFACE ON ITEM CLICK LISTENER **/
+/** INTERFACE ON ITEM CLICK LISTENER **/;
 	
 	@Override
 	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 		switch (arg2) {
 			case 0:
-				Intent i = new Intent(this, InformacionBasica.class);
-				i.putExtra("objetoProducto",objetoProductoPublic);
-				startActivity(i);
+				Intent iInfoBasica = new Intent(this, InformacionBasica.class);
+				//iInfoBasica.putExtra("objetoProducto",objetoProductoPublic);
+				startActivity(iInfoBasica);
 				break;
 			case 1:
 				startActivity(new Intent(this, FichaTecnica.class));
 				break;
 			case 2:
-				startActivity(new Intent(this, Imagen.class));
+			    Intent imgIntent = new Intent(Elemento.this, ServicioDecodificarImagen.class);
+			    imgIntent.putExtra("productoLeido", objetoProductoPublic);
+		        startService(imgIntent);			
 				break;
 			case 3:
 				startActivity(new Intent(this, VideoProducto.class));

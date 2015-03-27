@@ -42,7 +42,7 @@ public class MainActivity extends Activity {
 			//Intent intent = new Intent(this, Elemento.class );
 			//intent.putExtra("valor", "http://10.0.2.2:3000/empresas/1/productos/1/item_productos/1.json");
 	    	//startActivity(intent);
-		    Intent msgIntent = new Intent(MainActivity.this, ServicioLectura.class);
+		    Intent msgIntent = new Intent(MainActivity.this, ServicioLecturaQR.class);
 	        msgIntent.putExtra("productoLeido", "http://10.0.2.2:3000/empresas/1/productos/1/item_productos/1.json");
 	        startService(msgIntent);
 	    	//Intent intent = new Intent("com.appar.SCAN")

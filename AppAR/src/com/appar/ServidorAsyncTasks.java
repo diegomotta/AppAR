@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class ServidorAsyncTasks extends  EmpresaAsynctask {
 
-	private ClienteHTTP cliente;
+	private ClienteGSON cliente;
 	private Context applicationContext;
 	private Dialog connectionProgressDialog;
 	private RespuestaHTTP  objetoProducto;
@@ -22,14 +22,14 @@ public class ServidorAsyncTasks extends  EmpresaAsynctask {
 	private ActionBar activity;
 	
 	public ServidorAsyncTasks(Context applicationContext, ActionBar actionBar) {
-		setCliente(new ClienteHTTP(applicationContext));
+		setCliente(new ClienteGSON(applicationContext));
 		setApplicationContext(applicationContext);
 		setSharedPreference(new SharedPreference(getApplicationContext()));	
 		
 	}
 
 	public ServidorAsyncTasks(Context applicationContext) {
-		setCliente(new ClienteHTTP(applicationContext));
+		setCliente(new ClienteGSON(applicationContext));
 		setApplicationContext(applicationContext);
 		setSharedPreference(new SharedPreference(getApplicationContext()));	
 		
@@ -71,11 +71,11 @@ public class ServidorAsyncTasks extends  EmpresaAsynctask {
 		this.applicationContext = applicationContext;
 	}
 	
-	public ClienteHTTP getCliente() {
+	public ClienteGSON getCliente() {
 		return cliente;
 	}
 
-	public void setCliente(ClienteHTTP cliente) {
+	public void setCliente(ClienteGSON cliente) {
 		this.cliente = cliente;
 	}
 

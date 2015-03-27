@@ -79,16 +79,6 @@ public class ConexionHTTP {
 
 	public void ejecutarGet (URI url) throws Exception{
 		HttpGet request = new HttpGet(url);
-		/*String combinedParams ="";
-		for(NameValuePair p : parametros){
-			String paramString = p.getName()+ "=" + URLEncoder.encode(p.getValue(),"UTF-8");
-			if(combinedParams.length()>1){
-				combinedParams += "&" + paramString;
-			}
-			else{
-				combinedParams += paramString;
-			}
-		}*/
 		ejecutarRequest(request);
 	}
 	
