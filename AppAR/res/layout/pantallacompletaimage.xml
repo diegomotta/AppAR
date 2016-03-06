@@ -16,25 +16,32 @@
 		   	     android:onClick="imageClick" >
 		   	 </ImageSwitcher>
 		   	 
-		   	<LinearLayout
+		   	<ScrollView
 		   	    android:id="@+id/textoImagen"
 		   	    android:layout_width="fill_parent"
-		   	    android:layout_height="58dp"
+		   	    android:layout_height="132dp"
 		   	    android:layout_gravity="center_horizontal|bottom"
 		   	    android:background="@drawable/gris"
 		   	    android:orientation="vertical"
 		   	    android:padding="12dip" >
+						<LinearLayout android:layout_width="match_parent"
+						                    android:layout_height="wrap_content"
+						                    android:orientation="vertical">
+				   	    <TextView
+				   	        android:id="@+id/tituloImagen"
+				   	        android:layout_width="fill_parent"
+				   	        android:layout_height="wrap_content"
+				   	        android:textSize="16sp"
+				   	        android:textStyle="bold" />
+		
+				   	    <TextView
+				   	        android:id="@+id/descripcionImagen"
+				   	        android:layout_width="fill_parent"
+				   	        android:layout_height="wrap_content"
+				   	        android:layout_weight="0.71"
+				   	        android:textSize="12sp" />
+				   	      </LinearLayout>
+		   	</ScrollView>
 
-		   	    <TextView 
-		   	        android:layout_width="fill_parent"
-		   	        android:layout_height="wrap_content"
-		   	        android:id="@+id/tituloImagen"
-		   	        android:textSize="12sp"/>
-		   	    <TextView 
-		   	        android:layout_width="fill_parent"
-		   	        android:layout_height="wrap_content"
-		   	        android:id="@+id/descripcionImagen"
-		   	        android:textSize="12sp"/>
-		   	</LinearLayout>
    	</FrameLayout>
 </FrameLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:id="@+id/xfragment_container"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="@bool/abc_action_bar_embed_tabs" >
+
+      <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"  >
+
+           <TextView
+               android:id="@+id/textTituloProceso"
+               android:layout_width="fill_parent"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:background="#000000"
+               android:gravity="center"
+               android:padding="20dp"
+               android:textColor="@android:color/white"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               android:typeface="normal" />
+     
+       <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" > 
+
+	   <ImageSwitcher
+	      android:id="@+id/imageProceso"
+   	      android:layout_width="fill_parent"
+   	      android:layout_height="fill_parent"
+   	      android:layout_gravity="center"
+	      android:src="@android:drawable/ic_menu_gallery" />
+
+	    </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ayudatxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#FFFFFF" />
+     
+	</LinearLayout>  
+	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        
+        <TextView
+            android:id="@+id/textDescripcionProceso"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical|right" />
+
+	</LinearLayout>  
+	
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>
+
+
+
+

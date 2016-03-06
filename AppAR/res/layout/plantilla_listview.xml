@@ -9,8 +9,9 @@
         android:id="@+id/titulo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:gravity="left"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/descripcion"

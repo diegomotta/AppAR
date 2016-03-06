@@ -7,8 +7,8 @@
     <string name="btnEscanear">Escanear</string>
     <string name="txt2activity">URL</string>
     <string name="AboutBusiness">Sobre la Empresa</string>
-    <string name="Help">Ayuda</string>
-    <string name="Close">Salir</string>
+    <string name="btn_Ayuda">Ayuda</string>
+
     <string name="BtnDescripcion">Descripción</string>
     <string name="lblFragment1">Descripcio</string>
     <string name="txtFrag1"> </string>
@@ -16,4 +16,88 @@
     <string name="tituloImagenGeneral"> </string>
     <string name="descripcionImagenGeneral"> </string>
     <string name="contenidoImagen"> </string>
+    <string name="descripcionVideo"> </string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="nombre_consulta_lbl">Nombre</string>
+    <string name="correo_consulta_lbl">E-mail</string>
+    <string name="telefono_consulta_lbl">Télefono</string>
+    <string name="nombre_consulta_txt"> </string>
+    <string name="correo_consulta_txt">nombre@correo.com </string>
+    <string name="telefono_consulta_txt"> </string>
+    <string name="descripcion_consulta_lbl">Descripción </string>   
+    <string name="descripcion_consulta_txt"> </string>   
+    <string name="btn_Enviar">Enviar</string> 
+    <string name="btn_Salir">Salir</string>   
+    <string name="btn_nuevo_comentario">Nuevo comentario</string> 
+    <string name="nombre_comentario_lbl">Nombre</string>  
+    <string name="nacionalidad_comentario_lbl">Nacionalidad</string>  
+    <string name="pais_comentario_lbl">Pais</string>  
+    <string name="ciudad_comentario_lbl">Ciudad</string>  
+    <string name="comentario_lbl">Comentario</string>  
+    <string name="nombre_comentario_txt"></string>  
+    <string name="nacionalidad_comentario_txt"></string>  
+    <string name="pais_comentario_txt"></string>  
+    <string name="ciudad_comentario_txt"></string>  
+    <string name="comentario_txt"></string>  
+    <string-array name="array_calificacion_producto">
+        <item>Seleccionar</item>
+        <item>Malo</item>
+        <item>Regular</item>
+        <item>Bueno</item>
+        <item>Muy bueno</item>
+        <item>Excelente</item>
+    </string-array>
+ 
+    <string-array name="array_precio_producto">
+        <item>Seleccionar</item>
+        <item>Acorde</item>
+        <item>Bajo</item>
+        <item>Alto</item>
+    </string-array>    
+    <string-array name="array_imagen_producto">
+        <item>Seleccionar</item>
+        <item>Diseño inadecuado</item>
+        <item>Diseño acorde</item>
+        <item>Diseño Regular</item>
+        <item>Diseño Excelente</item>
+    </string-array>    
+    
+    <string-array name="array_entero_producto">
+        <item>Seleccionar</item>
+        <item>Amigo</item>
+        <item>familiar</item>
+        <item>Internet</item>
+        <item>Publicidad radial</item>
+        <item>Publicidad televisa</item>
+        <item>Medios impresos</item>
+        <item>Otro</item>
+    </string-array> 
+    <string-array name="array_otro_sabor">
+        <item>Seleccionar</item>
+        <item>Naranja</item>
+        <item>Limon</item>
+        <item>Stevia</item>
+        <item>Pomelo</item>
+        <item>Maracuyá</item>
+        <item>Pera</item>
+        <item>Citricos</item>
+        <item>Cafe</item>
+        <item>Endulzada</item>
+        <item>Miel</item>
+        <item>Otros</item>
+    </string-array> 
+    <string-array name="array_como_consume">
+        <item>Seleccionar</item>
+        <item>Amargo</item>
+        <item>Semi dulce</item>
+        <item>Dulce</item>
+    </string-array>     
+    <string-array name="array_endulzante">
+        <item>Seleccionar</item>
+        <item>Azucar</item>
+        <item>Edulcorante</item>
+        <item>Miel</item>
+        <item>Stevia</item>
+    </string-array>
+        <string name="medium_text">Medium Text</string>             
 </resources>
